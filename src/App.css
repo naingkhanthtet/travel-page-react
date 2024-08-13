@@ -3,41 +3,72 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.App {
+.BusinessCard {
+  width: 500px;
+  background-color: #1a1b21;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.CardImage img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-title > p {
+  color: #f3bf99;
+}
+
+.CardAboutInterest {
+  padding: 0em 2em;
+  text-align: left;
+}
+
+.CardButton {
+  margin: 1em 0em;
+}
+
+.email-button {
+  display: inline-block;
+  width: 100px;
+  justify-content: center;
+  padding: 1em 1.5em;
+  margin: 0em 1em;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.linkedin-button {
+  display: inline-block;
+  width: 100px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1em 1.5em;
+  margin: 0em 1em;
+  font-size: 16px;
   color: white;
+  background-color: #5093e2;
+  border-radius: 10px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.footer-icons {
+  color: #918e9b;
+  background-color: #161619;
+  display: flex;
+  margin: auto;
+  padding: 1em 1em;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer-icons > * {
+  padding: 1em;
+}
+
+.App {
+  text-align: center;
 }
