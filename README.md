@@ -1,2 +1,2 @@
-# react-businesscard
-business card made with react
+# Trave Page
+Trave page made with React, data driven development
