@@ -55,6 +55,7 @@ section {
   width: 40%;
   overflow: hidden;
   border-radius: 10px;
+  margin-right: 1em;
 }
 
 .card--imagesec img {
@@ -76,4 +77,30 @@ section {
 
 .card--location > * {
   margin-right: 0.5em;
+}
+
+@media (max-width: 768px) {
+  .Card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .card--imagesec,
+  .card--contentsec {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* .card--contentsec {
+    padding: 0;
+  } */
+}
+
+hr {
+  width: 100%; /* Full width of the container */
+  flex-basis: auto; /* Ensures the <hr> is sized based on its content */
+  align-self: stretch; /* Ensures the <hr> stretches across the container */
+  border: none; /* Removes the default border */
+  border-top: 1px solid #ccc; /* Custom border */
+  margin: 20px 0; /* Vertical spacing */
 }

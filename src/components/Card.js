@@ -14,23 +14,26 @@ const Card = (props) => {
     */
 
   return (
-    <div className="Card">
-      <div className="card--imagesec">
-        <img src={props.imageUrl} alt="travel photos" />
+    <div>
+      <div className="Card">
+        <div className="card--imagesec">
+          <img src={props.imageUrl} alt="travel photos" />
+        </div>
+
+        <div className="card--contentsec">
+          <span className="card--location">
+            <FaMapMarker className="card--mapmarker" />
+            <p>{props.location}</p>
+            <a href={props.googleMapsUrl}>View on Google Maps</a>
+          </span>
+          <h2 className="card--title">{props.title}</h2>
+          <h5>
+            {props.startDate} - {props.endDate}
+          </h5>
+          <p className="card--description">{props.description}</p>
+        </div>
       </div>
 
-      <div className="card--contentsec">
-        <span className="card--location">
-          <FaMapMarker className="card--mapmarker" />
-          <p>{props.location}</p>
-          <a href={props.googleMapsUrl}>View on Google Maps</a>
-        </span>
-        <h2 className="card--title">{props.title}</h2>
-        <h5>
-          {props.startDate} - {props.endDate}
-        </h5>
-        <p className="card--description">{props.description}</p>
-      </div>
       <hr />
     </div>
   );
