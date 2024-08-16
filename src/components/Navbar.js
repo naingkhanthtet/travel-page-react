@@ -1,13 +1,11 @@
 import React from "react";
+import { FaEarthAsia } from "react-icons/fa6";
 
 export default function Navbar() {
   return (
     <nav>
-      <img
-        src={`${process.env.PUBLIC_URL}/airbnb-logo.png`}
-        className="nav--logo"
-        alt="logo"
-      />
+      <FaEarthAsia className="nav--logo" />
+      <h3>My Travel Journal</h3>
     </nav>
   );
 }
